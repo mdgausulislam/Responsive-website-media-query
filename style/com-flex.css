@@ -1,0 +1,49 @@
+.row{
+  
+    margin-bottom: 5px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.second-row,.third-row{
+    display: flex;
+    gap: 5px;
+}
+
+.second-row > div{
+    flex: 1;
+}
+.div-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+}
+
+.div-container img{
+    height: 200px;
+}
+.four-dimensional{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+.third-row > div{
+    flex: 1;
+}
+
+@media screen and (max-width:576px){
+    .second-row,.third-row{
+        flex-direction: column;
+    }
+    .four-dimensional{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:577px){
+    .row{
+        height: 400px;
+    }
+    
+}
